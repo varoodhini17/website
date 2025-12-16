@@ -1,0 +1,36 @@
+{% load static %}
+<html>
+<head>
+    <title>Menu | Pasta & Co</title>
+    <link rel="stylesheet" href="{% static 'rest.css' %}">
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'menu' %}">Menu</a>
+    <a href="{% url 'contact' %}">Contact</a>
+    <a href="{% url 'admin_page' %}">Admin</a>
+</nav>
+
+<div class="container">
+    <h1>Our Pasta Menu</h1>
+
+    <div class="menu-grid">
+        <div class="menu-item"><img src="{% static 'pasta1.jpg' %}"><p>Spaghetti</p><p>₹220</p></div>
+        <div class="menu-item"><img src="{% static 'pasta2.jpg' %}"><p>Penne</p><p>₹200</p></div>
+        <div class="menu-item"><img src="{% static 'pasta3.jpg' %}"><p>Fettuccine</p><p>₹240</p></div>
+        <div class="menu-item"><img src="{% static 'pasta4.jpg' %}"><p>Fusilli</p><p>₹210</p></div>
+        <div class="menu-item"><img src="{% static 'pasta5.jpg' %}"><p>Macaroni</p><p>₹180</p></div>
+        <div class="menu-item"><img src="{% static 'pasta6.jpg' %}"><p>Linguine</p><p>₹260</p></div>
+        <div class="menu-item"><img src="{% static 'pasta7.jpg' %}"><p>Ringatoni</p><p>₹280</p></div>
+        <div class="menu-item"><img src="{% static 'pasta9.jpg' %}"><p>Farfalline</p><p>₹250</p></div>
+        <div class="menu-item"><img src="{% static 'pasta10.jpg' %}"><p>Lasagna</p><p>₹230</p></div>
+        <div class="menu-item"><img src="{% static 'pasta11.jpg' %}"><p>Ravioli</p><p>₹270</p></div>
+        <div class="menu-item"><img src="{% static 'pasta12.jpg' %}"><p>Tortellini</p><p>₹190</p></div>
+        <div class="menu-item"><img src="{% static 'pasta13.jpg' %}"><p>Pappardelle</p><p>₹260</p></div>
+    </div>
+</div>
+
+</body>
+</html>

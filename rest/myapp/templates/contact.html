@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+<head>
+    <title>Contact | Pasta & Co</title>
+    <link rel="stylesheet" href="{% static 'rest.css' %}">
+</head>
+<body>
+
+<nav>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'menu' %}">Menu</a>
+    <a href="{% url 'contact' %}">Contact</a>
+    <a href="{% url 'admin_page' %}">Admin</a>
+</nav>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <p>Chennai, India</p>
+    <p> +91 1234567891</p>
+    <p> pastaandco@gmail.com</p>
+</div>
+
+</body>
+</html>
